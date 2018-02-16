@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mediatheque</property>
+        <property name="hibernate.connection.username">root</property>
+        
+        <!-- Autres -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.show_sql">true</property>
+		
+		<mapping class="com.ingetis.waz.model.Personne"/>
+		<mapping class="com.ingetis.waz.model.Adherent"/>
+		<mapping class="com.ingetis.waz.model.Acteur"/>
+		<mapping class="com.ingetis.waz.model.Auteur"/>
+		<mapping class="com.ingetis.waz.model.Adresse"/>
+		<mapping class="com.ingetis.waz.model.Produit"/>
+		<mapping class="com.ingetis.waz.model.Livre"/>
+		<mapping class="com.ingetis.waz.model.CD"/>
+		<mapping class="com.ingetis.waz.model.CDOuDVD"/>
+		<mapping class="com.ingetis.waz.model.Chanteur"/>
+		<mapping class="com.ingetis.waz.model.DVD"/>
+		<mapping class="com.ingetis.waz.model.LivreInfo"/>
+		<mapping class="com.ingetis.waz.model.Producteur"/>
+		<mapping class="com.ingetis.waz.model.Realisateur"/>
+    </session-factory>
+</hibernate-configuration>
